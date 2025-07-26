@@ -28,7 +28,9 @@ EXPOSE 5173
 
 # Set environment variables
 ENV NODE_ENV=production \
-    RUNNING_IN_DOCKER=true
+    RUNNING_IN_DOCKER=true \
+    MINIFLARE_DISABLED=true
+
 
 # Start the app
 CMD ["pnpm", "run", "dockerstart"]
